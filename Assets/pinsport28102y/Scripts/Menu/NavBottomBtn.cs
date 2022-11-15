@@ -1,15 +1,13 @@
 using UnityEngine.UI;
 using UnityEngine;
 
-public class NavTopBtn : MonoBehaviour
+public class NavBottomBtn : MonoBehaviour
 {
-    [SerializeField] TournirData tournirData;
-
     private void Start()
     {
         GetComponent<Button>().onClick.AddListener(() =>
         {
-            AppManager.Instance.SetActiveTournir(tournirData);
+            AppManager.Instance.SetActivePage(transform.GetSiblingIndex());
         });
     }
 }

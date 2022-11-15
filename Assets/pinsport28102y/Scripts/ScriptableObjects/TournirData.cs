@@ -3,8 +3,6 @@ using UnityEngine;
 [CreateAssetMenu]
 public class TournirData : ScriptableObject
 {
-    public string championshipName;
-
     [Space(10)]
     public TimetableData[] timetableDatas;
 
