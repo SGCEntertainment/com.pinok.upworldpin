@@ -5,7 +5,7 @@ public class RectFitterHelper : MonoBehaviour
     RectTransform RectTransform { get; set; }
 
     private void Awake() => RectTransform = GetComponent<RectTransform>();
-    private void Start()
+    private void Update()
     {
         var safeArea = Screen.safeArea;
         var anchorMin = safeArea.position;
