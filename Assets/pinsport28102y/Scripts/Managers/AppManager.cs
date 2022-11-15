@@ -13,6 +13,9 @@ public class AppManager : MonoBehaviour
     private StatsItem StatsItem { get; set; }
     private Transform ParentContent { get; set; }
 
+    private int photoId = 0;
+    private Texture2D[] photos;
+
     public TournirData ActiveTournir;
 
     private void Awake() => CacheComponents();
@@ -25,6 +28,11 @@ public class AppManager : MonoBehaviour
         StatsItem = Resources.Load<StatsItem>("Items/statsItem");
 
         ParentContent = GameObject.Find("ParentContent").transform;
+
+        photos = new Texture2D[3];
+        photos[0] = Resources.Load<Texture2D>("Photos/Com_1");
+        photos[1] = Resources.Load<Texture2D>("Photos/Com_2");
+        photos[2] = Resources.Load<Texture2D>("Photos/Com_3");
     }
 
     private void ClearOldElements()
@@ -46,7 +54,6 @@ public class AppManager : MonoBehaviour
     public void SetActivePage(int pageIndex)
     {
         ClearOldElements();
-        Debug.Log(TimeTableItem.name);
 
         switch(pageIndex)
         {
@@ -54,7 +61,13 @@ public class AppManager : MonoBehaviour
 
                 foreach(TimetableData timetableData in ActiveTournir.timetableDatas)
                 {
-                    Instantiate(TimeTableItem, ParentContent).SetData(timetableData);
+                    if(photoId >= photos.Length)
+                    {
+                        photoId = 0;
+                    }
+
+                    Instantiate(TimeTableItem, ParentContent).SetData(timetableData, photos[photoId]);
+                    photoId++;
                 }break;
 
             case 1: break;

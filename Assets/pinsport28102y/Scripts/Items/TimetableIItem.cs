@@ -3,8 +3,12 @@ using UnityEngine;
 
 public class TimetableIItem : MonoBehaviour
 {
-    public void SetData(TimetableData timetableData)
+    public void SetData(TimetableData timetableData, Texture2D texture)
     {
+        RawImage background = transform.GetChild(0).GetComponent<RawImage>();
+        background.texture = texture;
+        background.SetNativeSize();
+
         Image leftCommandImg = transform.Find("leftCommandIcon").GetComponent<Image>();
         Image rightCommandImg = transform.Find("rightCommandIcon").GetComponent<Image>();
 
