@@ -63,6 +63,7 @@ public class AppManager : MonoBehaviour
     public void SetGame()
     {
         HorizontalNavigation.SetActive(false);
+        GameActivity.SetActive(true);
     }
 
     public void SetActiveTournir(TournirData _tournirData)
