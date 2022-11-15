@@ -64,32 +64,32 @@ public class ContentMaker : MonoBehaviour
         //    activeTournir.tableData.rows[i] = rows[i];
         //}
 
-        string[] rowsScorers = scorers.Split('\n');
-        ScorersData scorersData = new ScorersData()
-        {
-            rows = new string[rowsScorers.Length]
-        };
+        //string[] rowsScorers = scorers.Split('\n');
+        //ScorersData scorersData = new ScorersData()
+        //{
+        //    rows = new string[rowsScorers.Length]
+        //};
 
-        for (int i = 0; i < rowsScorers.Length; i++)
-        {
-            scorersData.rows[i] = rowsScorers[i];
-        }
+        //for (int i = 0; i < rowsScorers.Length; i++)
+        //{
+        //    scorersData.rows[i] = rowsScorers[i];
+        //}
 
-        string[] rowsFouls = fouls.Split('\n');
-        FoulsData foulsData = new FoulsData()
-        {
-            rows = new string[rowsFouls.Length]
-        };
+        //string[] rowsFouls = fouls.Split('\n');
+        //FoulsData foulsData = new FoulsData()
+        //{
+        //    rows = new string[rowsFouls.Length]
+        //};
 
-        for (int i = 0; i < rowsFouls.Length; i++)
-        {
-            foulsData.rows[i] = rowsFouls[i];
-        }
+        //for (int i = 0; i < rowsFouls.Length; i++)
+        //{
+        //    foulsData.rows[i] = rowsFouls[i];
+        //}
 
-        activeTournir.statsData = new StatsData()
-        {
-            scorersData = scorersData,
-            foulsData = foulsData
-        };
+        //activeTournir.statsData = new StatsData()
+        //{
+        //    scorersData = scorersData,
+        //    foulsData = foulsData
+        //};
     }
 }
