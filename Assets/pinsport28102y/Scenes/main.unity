@@ -299,6 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156ef4d171f38b84785596af82cfc0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: {fileID: 21300000, guid: 4de25fd9469e4ec46bb4288ca48877a0, type: 3}
+  disable: {fileID: 21300000, guid: d4b1e324a9b7ec445a401d5127a7b935, type: 3}
 --- !u!1 &68515586
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156ef4d171f38b84785596af82cfc0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: {fileID: 21300000, guid: cbf16a006f1dcb546a1596991113e802, type: 3}
+  disable: {fileID: 21300000, guid: cd2b144fcb0958a428be5b39b9f7739d, type: 3}
 --- !u!1 &98303851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156ef4d171f38b84785596af82cfc0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: {fileID: 21300000, guid: 267947b5c2a96034a88be79ef535b543, type: 3}
+  disable: {fileID: 21300000, guid: d88799627c6071a46aff3c95f4686a26, type: 3}
 --- !u!1 &579412952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,6 +2370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfef9934d9477441b0521fd9ce36d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: {r: 0.043137256, g: 0.67058825, b: 0.52156866, a: 1}
+  disable: {r: 1, g: 1, b: 1, a: 1}
   tournirData: {fileID: 11400000, guid: 19b599fec275b084ea8c01edfd67b936, type: 2}
 --- !u!1 &1279442894
 GameObject:
@@ -2787,6 +2795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156ef4d171f38b84785596af82cfc0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: {fileID: 21300000, guid: 155ec5c2afba84c46b81798eb483ecd9, type: 3}
+  disable: {fileID: 21300000, guid: 08ea23df126520f4186c307a0e88ef3a, type: 3}
 --- !u!1 &1621889582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,6 +3368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfef9934d9477441b0521fd9ce36d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: {r: 0.043137256, g: 0.67058825, b: 0.52156866, a: 1}
+  disable: {r: 1, g: 1, b: 1, a: 1}
   tournirData: {fileID: 11400000, guid: fbc80369406eab6448efed79dfcc9b82, type: 2}
 --- !u!1 &1870998579
 GameObject:

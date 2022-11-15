@@ -62,12 +62,24 @@ public class AppManager : MonoBehaviour
 
     public void SetGame()
     {
+        NavTopBtn[] navTopBtns = FindObjectsOfType<NavTopBtn>();
+        foreach (NavTopBtn nt in navTopBtns)
+        {
+            nt.SetActive(false);
+        }
+
         HorizontalNavigation.SetActive(false);
         GameActivity.SetActive(true);
     }
 
     public void SetActiveTournir(TournirData _tournirData)
     {
+        NavTopBtn[] navTopBtns = FindObjectsOfType<NavTopBtn>();
+        foreach (NavTopBtn nt in navTopBtns)
+        {
+            nt.SetActive(nt.tournirData == _tournirData);
+        }
+
         HorizontalNavigation.SetActive(true);
         GameActivity.SetActive(false);
 
@@ -77,6 +89,12 @@ public class AppManager : MonoBehaviour
 
     public void SetActivePage(int pageIndex)
     {
+        NavBottomBtn[] navBottomBtns = FindObjectsOfType<NavBottomBtn>();
+        foreach(NavBottomBtn nb in navBottomBtns)
+        {
+            nb.SetActive(nb.transform.GetSiblingIndex() == pageIndex);
+        }
+
         ClearOldElements();
 
         switch(pageIndex)
