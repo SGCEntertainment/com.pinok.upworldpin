@@ -8,8 +8,6 @@ public class AppManager : MonoBehaviour
     private StatsItem StatsItem { get; set; }
     private Transform ParentContent { get; set; }
 
-    public ÑhampionshipData cd;
-
 
     private void Awake() => CacheComponents();
     private void Start() => Screen.fullScreen = false;
