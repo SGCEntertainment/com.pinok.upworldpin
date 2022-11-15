@@ -7,5 +7,6 @@ class OrientationHelper
     static void SetGameOrientation()
     {
         Screen.orientation = Scenes.sceneCount > 0 ? ScreenOrientation.AutoRotation : ScreenOrientation.Portrait;
+        Screen.fullScreen = false;
     }
 }

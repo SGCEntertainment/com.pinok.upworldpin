@@ -9,7 +9,6 @@ public class AppManager : MonoBehaviour
     private Transform ParentContent { get; set; }
 
     private void Awake() => CacheComponents();
-    private void Start() => Screen.fullScreen = false;
 
     private void CacheComponents()
     {
