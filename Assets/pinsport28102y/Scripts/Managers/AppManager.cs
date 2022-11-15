@@ -90,7 +90,10 @@ public class AppManager : MonoBehaviour
                 Instantiate(TableItem, ParentContent).SetData(ActiveTournir.tableData);
                 break;
 
-            case 3: break;
+            case 3:
+
+                Instantiate(StatsItem, ParentContent).SetData(ActiveTournir.statsData);
+                break;
         }
 
         ParentContent.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 1;
