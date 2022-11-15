@@ -11,6 +11,11 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if(!gameObject.activeInHierarchy)
+        {
+            return;
+        }
+
         if(Input.GetMouseButton(0))
         {
             if(Input.mousePosition.y > TopBorder.position.y)

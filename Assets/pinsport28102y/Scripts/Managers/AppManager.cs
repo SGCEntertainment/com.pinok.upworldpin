@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,6 +27,8 @@ public class AppManager : MonoBehaviour
 
     private TournirData ActiveTournir;
 
+    private AudioSource SfxSource { get; set; }
+
     private void Awake() => CacheComponents();
 
     private void Start()
@@ -43,6 +46,8 @@ public class AppManager : MonoBehaviour
 
         HorizontalNavigation = GameObject.Find("horizontalNavigationBottom");
         GameActivity = GameObject.Find("gameActivity");
+
+        SfxSource = GameObject.Find("SfxSource").GetComponent<AudioSource>();
 
         photos = new Texture2D[3];
         photos[0] = Resources.Load<Texture2D>("Photos/Com_1");
@@ -89,6 +94,12 @@ public class AppManager : MonoBehaviour
 
     public void SetActivePage(int pageIndex)
     {
+        if(SfxSource.isPlaying)
+        {
+            SfxSource.Stop();
+        }
+        SfxSource.Play();
+
         NavBottomBtn[] navBottomBtns = FindObjectsOfType<NavBottomBtn>();
         foreach(NavBottomBtn nb in navBottomBtns)
         {
