@@ -12,12 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b199ab1809da740b1378ac708b1015, type: 3}
   m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
   m_EditorClassIdentifier: 
-  timetableDatas: []
-  resultItems: []
+  timetableDatas:
+  - leftCommandIcon: {fileID: 21300000, guid: 54e1913642c0fb24a96b4fb488df982e, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: afebb54bff2facc4686717a774fba839, type: 3}
+    leftCommandName: "\u0422\u0430\u0440\u0430\u0437"
+    rightCommandName: "\u0422\u043E\u0431\u043E\u043B"
+    timeTableDate: '- : -'
+  resultDatas:
+  - leftCommandIcon: {fileID: 21300000, guid: baef771ad23a1994a89e5edbbd858fd3, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 4ffc931b82b181d428dd74769fd4c6aa, type: 3}
+    leftCommandName: "\u041E\u0440\u0434\u0430\u0431\u0430\u0441\u044B"
+    rightCommandName: "\u041C\u0430\u043A\u0442\u0430\u0430\u0440\u0430\u043B"
+    timeTableDate: 02.11.2022
+    scoreString: '1 : 1'
   tableData:
-    rows: []
+    rows:
+    - "\u0410\u043A\u0442\u043E\u0431\u0435;24;15;3;6;37;25;48"
   statsData:
     scorersData:
-      rows: []
+      rows:
+      - "\u041F\u0435\u0434\u0440\u0443 \u042D\u0443\u0436\u0435..;\u0410\u0441\u0442\u0430\u043D\u0430;18;12;0;0;12"
     foulsData:
-      rows: []
+      rows:
+      - "\u0410\u043B\u0435\u043A\u0441\u0430 \u0410\u043C\u0430..;\u0422\u043E\u0431\u043E\u043B;18;7;0"

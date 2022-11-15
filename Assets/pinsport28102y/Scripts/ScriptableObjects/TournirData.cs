@@ -7,7 +7,7 @@ public class TournirData : ScriptableObject
     public TimetableData[] timetableDatas;
 
     [Space(10)]
-    public ResultItem[] resultItems;
+    public ResultData[] resultDatas;
 
     [Space(10)]
     public TableData tableData;

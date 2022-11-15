@@ -46,10 +46,17 @@ public class AppManager : MonoBehaviour
     public void SetActivePage(int pageIndex)
     {
         ClearOldElements();
+        Debug.Log(TimeTableItem.name);
 
         switch(pageIndex)
         {
-            case 0:break;
+            case 0:
+
+                foreach(TimetableData timetableData in ActiveTournir.timetableDatas)
+                {
+                    Instantiate(TimeTableItem, ParentContent).SetData(timetableData);
+                }break;
+
             case 1: break;
             case 2: break;
             case 3: break;
