@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,12 +15,23 @@ public class AppManager : MonoBehaviour
     private StatsItem StatsItem { get; set; }
     private Transform ParentContent { get; set; }
 
+
+    private GameObject HorizontalNavigation { get; set; }
+    private GameObject GameActivity { get; set; }
+
+
     private int photoId = 0;
     private Texture2D[] photos;
 
-    public TournirData ActiveTournir;
+
+    private TournirData ActiveTournir;
 
     private void Awake() => CacheComponents();
+
+    private void Start()
+    {
+        SetActiveTournir(GameObject.Find("meniuItem (1)").GetComponent<NavTopBtn>().tournirData);
+    }
 
     private void CacheComponents()
     {
@@ -27,8 +39,10 @@ public class AppManager : MonoBehaviour
         ResultItem = Resources.Load<ResultItem>("Items/resultItem");
         TableItem = Resources.Load<TableItem>("Items/tableItem");
         StatsItem = Resources.Load<StatsItem>("Items/statsItem");
-
         ParentContent = GameObject.Find("ParentContent").transform;
+
+        HorizontalNavigation = GameObject.Find("horizontalNavigationBottom");
+        GameActivity = GameObject.Find("gameActivity");
 
         photos = new Texture2D[3];
         photos[0] = Resources.Load<Texture2D>("Photos/Com_1");
@@ -46,8 +60,16 @@ public class AppManager : MonoBehaviour
         ParentContent.DetachChildren();
     }
 
+    public void SetGame()
+    {
+        HorizontalNavigation.SetActive(false);
+    }
+
     public void SetActiveTournir(TournirData _tournirData)
     {
+        HorizontalNavigation.SetActive(true);
+        GameActivity.SetActive(false);
+
         ActiveTournir = _tournirData;
         SetActivePage(0);
     }

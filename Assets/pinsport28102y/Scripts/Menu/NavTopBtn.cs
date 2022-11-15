@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class NavTopBtn : MonoBehaviour
 {
-    [SerializeField] TournirData tournirData;
+    public TournirData tournirData;
 
     private void Start()
     {
