@@ -88,8 +88,86 @@ MonoBehaviour:
     rightCommandIcon: {fileID: 21300000, guid: 4ffc931b82b181d428dd74769fd4c6aa, type: 3}
     leftCommandName: "\u041E\u0440\u0434\u0430\u0431\u0430\u0441\u044B"
     rightCommandName: "\u041C\u0430\u043A\u0442\u0430\u0430\u0440\u0430\u043B"
-    timeTableDate: 02.11.2022
+    timeTableDate: 03.02.2022|16:30
     scoreString: '1 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: c99ee3557d07aa040ba83a0dbaa082a5, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: afebb54bff2facc4686717a774fba839, type: 3}
+    leftCommandName: "\u041A\u0430\u0441\u043F\u0438\u0439"
+    rightCommandName: "\u0422\u043E\u0431\u043E\u043B"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '0 : 0'
+  - leftCommandIcon: {fileID: 21300000, guid: 0404738eb3961784883b323638fb289b, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: d9913153d3d3086459811c3b96d6b5b7, type: 3}
+    leftCommandName: "\u0410\u043A\u0442\u043E\u0431\u0435"
+    rightCommandName: "\u0410\u0442\u044B\u0440\u0430\u0443"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '2 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: 4ffc931b82b181d428dd74769fd4c6aa, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 98617fd744354f44a912aa2021bdcd67, type: 3}
+    leftCommandName: "\u041C\u0430\u043A\u0442\u0430\u0430\u0440\u0430\u043B"
+    rightCommandName: "\u041A\u0430\u0439\u0440\u0430\u0442"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '0 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: d9913153d3d3086459811c3b96d6b5b7, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 4ffc931b82b181d428dd74769fd4c6aa, type: 3}
+    leftCommandName: "\u0410\u0442\u044B\u0440\u0430\u0443"
+    rightCommandName: "\u041C\u0430\u043A\u0442\u0430\u0430\u0440\u0430\u043B"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '2 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: baef771ad23a1994a89e5edbbd858fd3, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 265b4193c2b201341a8ee79fda974ae4, type: 3}
+    leftCommandName: "\u041E\u0440\u0434\u0430\u0431\u0430\u0441\u044B"
+    rightCommandName: "\u0410\u043A\u0436\u0430\u0439\u044B\u043A"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '2 : 0'
+  - leftCommandIcon: {fileID: 21300000, guid: 44b8b6b67ec053f439a81b6f5b845c53, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: c99ee3557d07aa040ba83a0dbaa082a5, type: 3}
+    leftCommandName: "\u0422\u0443\u0440\u0430\u043D"
+    rightCommandName: "\u041A\u0430\u0441\u043F\u0438\u0439"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '0 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: 98617fd744354f44a912aa2021bdcd67, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 54e1913642c0fb24a96b4fb488df982e, type: 3}
+    leftCommandName: "\u041A\u0430\u0439\u0440\u0430\u0442"
+    rightCommandName: "\u0422\u0430\u0440\u0430\u0437"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '1 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: 440ce9b8c2179fd4dbeee335e0221ac8, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 0404738eb3961784883b323638fb289b, type: 3}
+    leftCommandName: "\u0410\u0441\u0442\u0430\u043D\u0430"
+    rightCommandName: "\u0410\u043A\u0442\u043E\u0431\u0435"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '1 : 0'
+  - leftCommandIcon: {fileID: 21300000, guid: afebb54bff2facc4686717a774fba839, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 74986fbc454d5074eb075e29e70d3aae, type: 3}
+    leftCommandName: "\u0422\u043E\u0431\u043E\u043B"
+    rightCommandName: "\u041A\u044B\u0437\u044B\u043B-\u0416\u0430\u0440"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '2 : 0'
+  - leftCommandIcon: {fileID: 21300000, guid: 0404738eb3961784883b323638fb289b, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: b0f88b4e30af6d24f997469be7a620f6, type: 3}
+    leftCommandName: "\u0410\u043A\u0442\u043E\u0431\u0435"
+    rightCommandName: "\u0428\u0430\u0445\u0442\u0435\u0440 \u041A\u0430\u0440\u0430\u0433\u0430\u043D\u0434\u0430"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '1 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: c99ee3557d07aa040ba83a0dbaa082a5, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: baef771ad23a1994a89e5edbbd858fd3, type: 3}
+    leftCommandName: "\u041A\u0430\u0441\u043F\u0438\u0439"
+    rightCommandName: "\u041E\u0440\u0434\u0430\u0431\u0430\u0441\u044B"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '2 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: 54e1913642c0fb24a96b4fb488df982e, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: d9913153d3d3086459811c3b96d6b5b7, type: 3}
+    leftCommandName: "\u0422\u0430\u0440\u0430\u0437"
+    rightCommandName: "\u0410\u0442\u044B\u0440\u0430\u0443"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '0 : 1'
+  - leftCommandIcon: {fileID: 21300000, guid: 4ffc931b82b181d428dd74769fd4c6aa, type: 3}
+    rightCommandIcon: {fileID: 21300000, guid: 440ce9b8c2179fd4dbeee335e0221ac8, type: 3}
+    leftCommandName: "\u041C\u0430\u043A\u0442\u0430\u0430\u0440\u0430\u043B"
+    rightCommandName: "\u0410\u0441\u0442\u0430\u043D\u0430"
+    timeTableDate: 03.02.2022|16:30
+    scoreString: '0 : 3'
   tableData:
     rows:
     - "\u0410\u043A\u0442\u043E\u0431\u0435;24;15;3;6;37;25;48"

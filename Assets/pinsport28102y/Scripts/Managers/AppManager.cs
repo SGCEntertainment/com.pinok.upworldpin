@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
 {
@@ -70,9 +71,25 @@ public class AppManager : MonoBehaviour
                     photoId++;
                 }break;
 
-            case 1: break;
+            case 1:
+
+                foreach (ResultData resultData in ActiveTournir.resultDatas)
+                {
+                    if (photoId >= photos.Length)
+                    {
+                        photoId = 0;
+                    }
+
+                    Instantiate(ResultItem, ParentContent).SetData(resultData, photos[photoId]);
+                    photoId++;
+                }
+                break;
+
             case 2: break;
             case 3: break;
         }
+
+        ParentContent.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 1;
+        Canvas.ForceUpdateCanvases();
     }
 }
