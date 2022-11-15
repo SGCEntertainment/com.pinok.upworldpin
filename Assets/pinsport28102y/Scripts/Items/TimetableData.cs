@@ -1,0 +1,13 @@
+using UnityEngine;
+
+[System.Serializable]
+public class TimetableData
+{
+    public Sprite leftCommandIcon;
+    public Sprite rightCommandIcon;
+
+    public string leftCommandName;
+    public string rightCommandName;
+
+    public string timeTableDate;
+}
