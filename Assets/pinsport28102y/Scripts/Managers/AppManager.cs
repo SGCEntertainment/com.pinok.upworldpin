@@ -85,7 +85,11 @@ public class AppManager : MonoBehaviour
                 }
                 break;
 
-            case 2: break;
+            case 2:
+
+                Instantiate(TableItem, ParentContent).SetData(ActiveTournir.tableData);
+                break;
+
             case 3: break;
         }
 
