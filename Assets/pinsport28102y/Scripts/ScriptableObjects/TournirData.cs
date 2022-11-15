@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class СhampionshipData : ScriptableObject
+public class TournirData : ScriptableObject
 {
     public string championshipName;
 
