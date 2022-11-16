@@ -33,7 +33,7 @@ public class AppManager : MonoBehaviour
 
     private void Start()
     {
-        SetActiveTournir(GameObject.Find("meniuItem (1)").GetComponent<NavTopBtn>().tournirData);
+        SetActiveTournir(Resources.Load<TournirData>("Tournirs/Казахстан"));
     }
 
     private void CacheComponents()
