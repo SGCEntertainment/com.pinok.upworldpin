@@ -226,13 +226,16 @@ public class Engine : MonoBehaviour
 	{
         Regex regex = new Regex(@"\[.*?\]");
         var res = regex.Matches(beforeString);
-        string geoString = res[1].Value.Substring(1, res[0].Value.Length - 2);
+
+		string copyGeo = res[1].Value;
+        string geoString = copyGeo.Substring(1, copyGeo.Length - 2);
+		
         string[] geoArray = geoString.Split(',');
 
         bool IsNozim = geoArray.Contains(owi4d);
         geoContains = IsNozim || geoString.Contains(Simcard.Instance.GetTwoSmallLetterCountryCodeISO().ToLower());
 
-		return res[0].Value.Substring(1, res[0].Value.Length - 2);
+        return res[0].Value.Substring(1, res[0].Value.Length - 2);
     }
 
 	void CacheComponents()
